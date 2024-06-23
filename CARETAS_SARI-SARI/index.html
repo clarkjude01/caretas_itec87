@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INVENTORY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script
+</head>
+
+<button onclick="javascript:history.back()" class="back-button" style="font-size: 30px; background-color:grey; color:white; margin-left: 35px; margin-top: 30px" >←Back</button>
+
+<body>
+
+<div class="logo">
+    <img src="images/logo.jpg">
+</div>
+
+<h1><center>PAPAPDOL CLOTHING</center></h1>
+<hr>
+
+<div>
+<nav>
+  <center>
+    <button onclick="toggleActive(this); showMenu('jeans');"><h2>Jeans</h2></button>
+    <button onclick="toggleActive(this); showMenu('pants');"><h2>Pants</h2></button>
+    <button onclick="toggleActive(this); showMenu('sports');"><h2>Sports</h2></button>
+    <button onclick="toggleActive(this); showMenu('bags');"><h2>Bags</h2></button>
+    <button onclick="toggleActive(this); showMenu('shoes');"><h2>Shoes</h2></button><br><br>
+    <button><a href="inv_cart.html"><h2 style="color: black">SHOPPING Cart</h2></a></button>
+  </center>
+</nav>
+
+<div id="jeans" class="inventory">
+  <div class="item">
+    <img src="images/tapered.jpg" alt="Tapered Jeans">
+    <h3>Tapered Jeans</h3>
+  </div>
+  <div class="item">
+    <img src="images/maong.jpg" alt="Maong Jeans">
+    <h3>Maong Jeans</h3>
+  </div>
+  <div class="item">
+    <img src="images/skinny.jpg" alt="Skinny Jeans">
+    <h3>Skinny Jeans</h3>
+  </div>
+  <div class="item">
+    <img src="images/loose.jpg" alt="Loose Jeans">
+    <h3>Loose Jeans</h3>
+  </div>
+</div>
+
+<div id="pants" class="inventory">
+  <div class="item">
+    <img src="images/jogger.jpg" alt="Jogger pants">
+    <h3>Jogger pants</h3>
+  </div>
+  <div class="item">
+    <img src="images/cargo.jpg" alt="Cargo Pants">
+    <h3>Cargo Pants</h3>
+  </div>
+  <div class="item">
+    <img src="images/sweat.jpg" alt="Sweat Pants">
+    <h3>Sweat Pants</h3>
+  </div>
+  <div class="item">
+    <img src="images/tweed.jpg" alt="Tweed Pants">
+    <h3>Tweed Pants</h3>
+  </div>
+</div>
+
+<div id="sports" class="inventory">
+  <div class="item">
+    <img src="images/track.jpg" alt="Tracksuits">
+    <h3>Tracksuits</h3>
+  </div>
+  <div class="item">
+    <img src="images/basketball.jpg" alt="Basketball Jersey">
+    <h3>Basketball Jersey</h3>
+  </div>
+  <div class="item">
+    <img src="images/baseball.jpg" alt="Football Jersey">
+    <h3>Football Jersey</h3>
+  </div>
+  <div class="item">
+    <img src="images/dri.jpg" alt="Dri-Fit Clothing">
+    <h3>Dri-Fit Clothing</h3>
+  </div>
+</div>
+
+<div id="bags" class="inventory">
+  <div class="item">
+    <img src="images/bag.jpg" alt="Bagpack">
+    <h3>Bagpack</h3>
+  </div>
+  <div class="item">
+    <img src="images/mess.jpg" alt="Messenger Bag">
+    <h3>Messenger Bag</h3>
+  </div>
+  <div class="item">
+    <img src="images/gym.jpg" alt="Gym Bag">
+    <h3>Gym Bag</h3>
+  </div>
+  <div class="item">
+    <img src="images/tote.jpg" alt="Tote Bag">
+    <h3>Tote Bag</h3>
+  </div>
+</div>
+
+<div id="shoes" class="inventory">
+  <div class="item">
+    <img src="images/basket.jpg" alt="Basketball Shoes">
+    <h3>Basketball Shoes</h3>
+  </div>
+  <div class="item">
+    <img src="images/loaf.jpg" alt="Loafers">
+    <h3>Loafers</h3>
+  </div>
+  <div class="item">
+    <img src="images/sneakers.jpg" alt="Sneakers">
+    <h3>Sneakers</h3>
+  </div>
+  <div class="item">
+    <img src="images/sandals.jpg" alt="Sandals">
+    <h3>Sandals</h3>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

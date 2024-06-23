@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant</title>
+<link rel="stylesheet" href="menu.css"> 
+
+</head>
+
+<button onclick="javascript:history.back()" class="back-button" style="font-size: 30px; background-color:#E5824C; color:white; margin-left: 35px; margin-top: 30px" >←Back</button>
+
+<body>
+
+<div class="logo">
+    <img src="logo.jpg">
+  </div>
+<br>
+
+<nav>
+  <center>
+	<button onclick="toggleActive(this); showMenu('mainDish');" style="background-color: #E5824C; color: white"><h2>Main Dish</h2></button>
+    <button onclick="toggleActive(this); showMenu('vegetable');" style="background-color: #E5824C; color: white"><h2>Vegetable</h2></button>
+    <button onclick="toggleActive(this); showMenu('dessert');" style="background-color: #E5824C; color: white"><h2>Dessert</h2></button>
+    <button onclick="toggleActive(this); showMenu('drinks');" style="background-color: #E5824C; color: white"><h2>Drinks</h2></button>
+    <button onclick="toggleActive(this); showMenu('addons');" style="background-color: #E5824C; color: white"><h2>Add-ons</h2></button>
+    <button onclick="toggleActive(this); showMenu('order');" style="background-color: #E5824C; color: white"><h2>ORDER HERE!</h2></button>
+  </center>
+</nav>
+
+<div id="mainDish" class="menu-type" style="display: none;">
+  <center><h2>Main Dish</h2></center>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="main1.jpg" alt="Beef Steak">
+      <h2>Beef Steak</h2>
+	  <h3>₱150.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="main2.jpg" alt="Beef Ribs">
+      <h2>Beef Rib</h2>
+	  <h3>₱120.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="main3.jpg" alt="Mushroom Soup">
+      <h2>Mushroom Soup</h2>
+	  <h3>₱80.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="main4.jpg" alt="Spicy Pasta">
+      <h2>Spicy Pasta</h2>
+	  <h3>₱65.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="main5.jpg" alt="Rice with Tuna">
+      <h2>Rice with Tuna</h2> 
+	  <h3>₱40.00</h3>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div id="vegetable" class="menu-type" style="display: none;">
+  <center><h2>Vegetable</h2></center>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="veg1.jpg" alt="Chop Suey">
+      <h2>Chop Suey</h2>
+	  <h3>₱75.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="veg2.jpg" alt="Ginataang Langka">
+      <h2>Ginataang Langka</h2>
+	  <h3>₱80.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="veg3.jpg" alt="Ginisang Ampalaya">
+      <h2>Ginisang Ampalaya</h2>
+	  <h3>₱75.00</h3>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div id="dessert" class="menu-type" style="display: none;">
+  <center><h2>Dessert</h2></center>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="des1.jpg" alt="Chocolate Cake">
+      <h2>Chocolate Cake</h2>
+	  <h3>₱100.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="des2.jpg" alt="Churros">
+      <h2>Churros</h2>
+	  <h3>₱50.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="des3.jpg" alt="Milk Pudding">
+      <h2>Milk Pudding </h2>
+	  <h3>₱80.00</h3>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div id="drinks" class="menu-type" style="display: none;">
+  <center><h2>Drinks</h2></center>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="dri1.jpg" alt="Beer">
+      <h2>Beer</h2>
+	  <h3>₱90.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="dri2.jpg" alt="Coke">
+      <h2>Coke</h2>
+	  <h3>₱50.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="dri3.jpg" alt="Lemon Juice">
+      <h2>Lemon Juice</h2>
+	  <h3>₱70.00</h3>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div id="addons" class="menu-type" style="display: none;">
+  <center><h2>Add-ons</h2></center>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="ad1.jpg" alt="Fries">
+      <h2>Fries</h2>
+	  <h2>₱40.00</h2>
+    </div>
+    <div class="menu-item">
+      <img src="ad2.jpg" alt="Java Rice">
+      <h2>Java Rice</h2>
+	  <h3>₱20.00</h3>
+    </div>
+    <div class="menu-item">
+      <img src="ad3.jpg" alt="Onion Rings">
+      <h2>Onion Rings</h2>
+	  <h3>₱50.00</h3>
+    </div>
+  </div>
+  <hr>
+</div>
+<br>
+<div id="order" class="menu-type" style="display: none;">
+    <div class="category">
+        <h3 class="category-heading">Main Dish</h3>
+        <label><input type="checkbox" class="main-course" value="150"> Beef Steak (₱150.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="main-course" value="120"> Beef Ribs (₱120.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="main-course" value="80"> Mushroom Soup (₱80.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="main-course" value="65"> Spicy Pasta (₱65.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="main-course" value="40"> Rice with Tuna (₱40.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading">Vegetable</h3>
+        <label><input type="checkbox" class="drinks" value="75"> Chop Suey (₱75.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="drinks" value="80"> Ginataang Langka (₱80.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="drinks" value="75"> Ginisang Ampalaya (₱75.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading">Desserts</h3>
+        <label><input type="checkbox" class="desserts" value="100"> Chocolate Cake (₱100.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="50"> Churros (₱50.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="80"> Milk Pudding (₱80.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading">Drinks</h3>
+        <label><input type="checkbox" class="desserts" value="90"> Beer (₱90.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="50"> Coke (₱50.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="70"> Lemon Juice (₱70.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading">Add-Ons</h3>
+        <label><input type="checkbox" class="desserts" value="40"> Fries (₱40.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="20"> Java Rice (₱20.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+        <label><input type="checkbox" class="desserts" value="50"> Onion Rings (₱50.00)</label>
+        <input type="number" class="quantity" min="0" value="0"><br>
+    </div>
+
+    <div class="category">
+        <h3>Discount</h3>
+        <label><input type="radio" name="discount" value="0" checked> No Discount</label>
+        <label><input type="radio" name="discount" value="0.10"> Student (10% off)</label>
+        <label><input type="radio" name="discount" value="0.20"> Senior (20% off)</label>
+    </div>
+		<p class="category">Total Price: ₱<span id="totalPrice">0.00</span></p>
+</div>
+
+<script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const quantities = document.querySelectorAll('.quantity');
+    const discountRadios = document.querySelectorAll('input[name="discount"]');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateTotal);
+    });
+    quantities.forEach(quantity => {
+        quantity.addEventListener('input', updateTotal);
+    });
+    discountRadios.forEach(radio => {
+        radio.addEventListener('change', updateTotal);
+    });
+
+    function updateTotal() {
+        let totalPrice = 0;
+        checkboxes.forEach((checkbox, index) => {
+            if (checkbox.checked) {
+                const price = parseFloat(checkbox.value);
+                const quantity = parseInt(quantities[index].value);
+                totalPrice += price * quantity;
+            }
+        });
+
+        const discount = parseFloat(document.querySelector('input[name="discount"]:checked').value);
+        const discountedPrice = totalPrice * (1 - discount);
+
+        document.getElementById('totalPrice').textContent = discountedPrice.toFixed(2);
+    }
+</script>
+
+
+
+<script>
+  function toggleActive(btn) {
+    var buttons = document.querySelectorAll('button');
+    buttons.forEach(function(button) {
+      if (button === btn) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  }
+
+  function showMenu(menuType) {
+    var menuItems = document.querySelectorAll('.menu-type');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.id === menuType) {
+        menuItem.style.display = 'block';
+      } else {
+        menuItem.style.display = 'none';
+      }
+    });
+  }
+
+</script>
+
+
+</body>
+</html>

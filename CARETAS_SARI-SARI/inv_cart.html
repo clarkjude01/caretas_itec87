@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"> 
+	
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+<center> 
+    <header>         
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <h1><center>CJC THRIFT SHOP</center></h1>
+    </header>
+</center>
+<hr>
+
+<nav class="navbar">
+    <ul>
+        <button><a href="INVENTORY.html"><h2 style="color: black">Back</h2></a></button>
+    </ul>
+</nav>
+
+<div id="wrapper">
+    <div id="products"></div>
+    <div id="cart">
+        <h2>YOUR CART:</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: ₱0.00</div><br>
+        <label for="discount-type">Discount Type:</label>
+        <select id="discount-type">
+            <option value="none">None</option>
+            <option value="senior">Senior (20%)</option>
+            <option value="pwd">PWD (30%)</option>
+            <option value="student">Student (10%)</option>
+        </select><br><br>
+        <label for="payment-amount">Payment Amount:</label>
+        <input type="number" id="payment-amount" step="0.01"><br><br>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
